@@ -62,10 +62,33 @@ Once you complete the challenge, create a public GitHub repository and upload yo
 Your submission will be evaluated based on the following criteria:
 
 - Usage of devcontainer by git submodule
-- Usage and deomonstrated control of Interface DI in springboot
+- Usage and demonstrated control of Interface DI in springboot
 
 
 Notes:
 - CODE FIRST APPROACH
 - Make sure to plug in database at the end (just output to text file for now)
 - Get swagger working.
+
+
+Unique to C#
+---------
+### Namespace
+In C#, a namespace is a way to organize and group related code elements, such as classes, structs, interfaces, enums, and delegates. Namespaces provide a hierarchical organization for your code, helping to prevent naming conflicts between different parts of your application and improving code readability and maintainability. It's considered good practice to utilize namespaces in C#.
+
+<href>https://www.csharptutorial.net/csharp-tutorial/csharp-namespaces/#:~:text=C%23%20namespace%20best%20practices&text=Use%20meaningful%20and%20descriptive%20namespace,only%20for%20frequently%20used%20namespaces.</href>
+
+### solution file
+Not having a .sln (solution) file is perfectly fine, especially if you have a simple project with just one .NET Core project in it. The .sln file is used to manage multiple projects within a single solution
+
+
+appsettings.json is updated for database connection by taking credentials from docker-compose.yml for devcontainer.
+
+command for logging into database
+sqlcmd -S db -U SA -P P@ssw0rd
+
+
+noted dotnet packages installed ontop
+-------------------------------------
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Swashbuckle.AspNetCore
