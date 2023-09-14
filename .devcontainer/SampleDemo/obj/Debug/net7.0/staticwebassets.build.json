@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "Hash": "VY7WHiyNo7g9vBQQhRwZqRTiPBi9p+ZYPagOwdkg0jk=",
+  "Source": "SampleDemo",
+  "BasePath": "_content/SampleDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "/workspaces/3-grad-challenge/.devcontainer/SampleDemo/obj/Debug/net7.0/scopedcss/bundle/SampleDemo.styles.css",
+      "SourceId": "SampleDemo",
+      "SourceType": "Computed",
+      "ContentRoot": "/workspaces/3-grad-challenge/.devcontainer/SampleDemo/obj/Debug/net7.0/scopedcss/bundle/",
+      "BasePath": "_content/SampleDemo",
+      "RelativePath": "SampleDemo.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/workspaces/3-grad-challenge/.devcontainer/SampleDemo/obj/Debug/net7.0/scopedcss/bundle/SampleDemo.styles.css"
+    },
+    {
+      "Identity": "/workspaces/3-grad-challenge/.devcontainer/SampleDemo/obj/Debug/net7.0/scopedcss/projectbundle/SampleDemo.bundle.scp.css",
+      "SourceId": "SampleDemo",
+      "SourceType": "Computed",
+      "ContentRoot": "/workspaces/3-grad-challenge/.devcontainer/SampleDemo/obj/Debug/net7.0/scopedcss/projectbundle/",
+      "BasePath": "_content/SampleDemo",
+      "RelativePath": "SampleDemo.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/workspaces/3-grad-challenge/.devcontainer/SampleDemo/obj/Debug/net7.0/scopedcss/projectbundle/SampleDemo.bundle.scp.css"
+    }
+  ]
+}
