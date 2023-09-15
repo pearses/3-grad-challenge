@@ -1,5 +1,15 @@
 # CRUD RestAPI Extension Software Engineering Challenge
 
+### Using the instance
+
+```
+Check sqlcmd version
+/opt/mssql-tools/bin/sqlcmd "-?"
+Login to Database
+/opt/mssql-tools/bin/sqlcmd -S db -U SA -P P@ssw0rd
+```
+
+
 ## Introduction
 
 In this software engineering challenge builds upon challenges 1 and 2. This time you are going to complete the same requirements of challenge 2 for dotnet 7 with an mssql database using dependency injection with a devcontainter.

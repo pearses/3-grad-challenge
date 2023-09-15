@@ -13,12 +13,22 @@ public class ItemController : ControllerBase
     }
 
     // POST /api/item
-    [HttpPost]
-    public IActionResult CreateItem([FromBody] Item item)
+[HttpPost]
+public IActionResult CreateItem([FromBody] Item item)
+{
+    if (item == null)
     {
-        // Create item logic
-        return Ok(item); // Return the created item
+        return BadRequest("Item data is invalid."); // If the item data is missing or invalid, return a bad request status.
     }
+
+    // Add the item to the database
+    _context.Items.Add(item);
+    _context.SaveChanges();
+
+    // Return a response with the created item and a 201 (Created) status code
+    return CreatedAtAction(nameof(GetItem), new { id = item.Id }, item);
+}
+
 
     // GET /api/item/{id}
     [HttpGet("{id}")]
