@@ -22,8 +22,10 @@
 						"authenticationType": "SqlLogin",
 						"user": "sa",
 						"password": "P@ssw0rd",
-						"emptyPasswordInput": false,
-						"savePassword": false,
+						"savePassword": true,
+						"trustServerCertificate": true,
+						"Encrypt": false,
+						"MultiSubnetFailover": true,
 						"profileName": "mssql-container"
 					}
 				]
