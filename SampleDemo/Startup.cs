@@ -17,12 +17,11 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddControllers();
+
         // Configure the database context
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
-
-        // Other services here
-        services.AddControllers();
 
         // Register Swagger
         services.AddSwaggerGen(c =>{

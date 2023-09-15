@@ -16,6 +16,7 @@ public class ItemController : ControllerBase
 [HttpPost]
 public IActionResult CreateItem([FromBody] Item item)
 {
+    //return Ok(item); // Return the updated item
     if (item == null)
     {
         return BadRequest("Item data is invalid."); // If the item data is missing or invalid, return a bad request status.
